@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram name="Social Identity Providers" id="social-identity-providers">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="🔗 Social Identity Provider Configuration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#FF8C00;" vertex="1" parent="1">
+          <mxGeometry x="350" y="15" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Step 1: Provider Registration -->
+        <mxCell id="step1-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="340" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-header" value="1️⃣ Create App at Provider" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="340" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Provider Icons -->
+        <mxCell id="prov-google" value="Google&#xa;Cloud Console" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="55" y="120" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="prov-meta" value="Meta for&#xa;Developers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="155" y="120" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="prov-apple" value="Apple&#xa;Developer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="255" y="120" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-tasks" value="📝 Steps:&#xa;1. Go to provider's developer portal&#xa;2. Create new application/project&#xa;3. Configure OAuth settings&#xa;4. Add B2C redirect URI&#xa;5. Get credentials (Client ID + Secret)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="175" width="310" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-output" value="📤 Output: Client ID + Client Secret" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="280" width="310" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 1-2 -->
+        <mxCell id="arrow1-2" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#FF8C00;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="195" as="sourcePoint" />
+            <mxPoint x="430" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Step 2: B2C Configuration -->
+        <mxCell id="step2-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="70" width="340" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-header" value="2️⃣ Configure in Azure AD B2C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="70" width="340" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-nav" value="Azure Portal → Azure AD B2C → Identity Providers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#50E6FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="445" y="115" width="310" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-form" value="+ Add Identity Provider&#xa;&#xa;Name:           [Google___________]&#xa;IdP Type:       [Social provider___]&#xa;Client ID:      [xxxx-xxxx-xxxx____]&#xa;Client Secret:  [******************]&#xa;Scope:          [email profile____]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="445" y="150" width="310" height="115" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-save" value="💾 Save Configuration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="445" y="280" width="310" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 2-3 -->
+        <mxCell id="arrow2-3" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="195" as="sourcePoint" />
+            <mxPoint x="820" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Step 3: Add to User Flow -->
+        <mxCell id="step3-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1E8900;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="70" width="340" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-header" value="3️⃣ Add to User Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="70" width="340" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-nav" value="User flows → B2C_1_SignUpSignIn → Identity Providers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#1E8900;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="835" y="115" width="310" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-select" value="Select Identity Providers:&#xa;&#xa;☑️ Local Account (Email)&#xa;☑️ Google&#xa;☑️ Facebook&#xa;☑️ Apple&#xa;☐ Microsoft Account" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1E8900;fontColor=#232F3E;shadow=1;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="835" y="150" width="310" height="115" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-test" value="▶️ Run user flow to test" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="835" y="280" width="310" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Redirect URI Section -->
+        <mxCell id="redirect-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#232F3E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="345" width="540" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="redirect-header" value="🔗 Redirect URI (Required at Provider)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="345" width="540" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="redirect-format" value="Format:  https://&lt;tenant&gt;.b2clogin.com/&lt;tenant&gt;.onmicrosoft.com/oauth2/authresp" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="520" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="redirect-example" value="Example: https://contoso.b2clogin.com/contoso.onmicrosoft.com/oauth2/authresp" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=9;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="50" y="405" width="520" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Claims Mapping -->
+        <mxCell id="claims-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B2D8E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="345" width="560" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-header" value="📋 Claims Mapping (Provider → B2C)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="345" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-sub" value="sub → sub" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B2D8E;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="615" y="385" width="90" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-email" value="email → email" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B2D8E;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="715" y="385" width="90" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-name" value="name → name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B2D8E;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="815" y="385" width="90" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-given" value="given_name → givenName" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B2D8E;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="915" y="385" width="130" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-note" value="⚠️ Claims vary by provider - configure mapping as needed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#7B2D8E;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="615" y="420" width="530" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Provider-Specific Notes -->
+        <mxCell id="notes-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#DD3522;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="465" width="1120" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="notes-header" value="⚠️ Provider-Specific Requirements" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DD3522;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="465" width="1120" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-google" value="Google&#xa;• Enable APIs&#xa;• OAuth consent&#xa;• Verified domain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="55" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-facebook" value="Facebook&#xa;• Live mode required&#xa;• App review needed&#xa;• Privacy policy URL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="210" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-apple" value="Apple&#xa;• Services ID required&#xa;• P8 key file&#xa;• Domain verification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="365" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-microsoft" value="Microsoft&#xa;• Azure AD app reg&#xa;• Personal accounts&#xa;• Standard OAuth 2.0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="520" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-twitter" value="Twitter/X&#xa;• OAuth 1.0a&#xa;• Callback URL&#xa;• App permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="675" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-github" value="GitHub&#xa;• OAuth app&#xa;• Homepage URL&#xa;• Callback URL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="830" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="note-linkedin" value="LinkedIn&#xa;• OAuth 2.0 app&#xa;• Products enabled&#xa;• Verified company" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=9;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="985" y="505" width="140" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- Success Flow -->
+        <mxCell id="flow-arrow" value="User clicks social button → Redirects to IdP → Auth success → Returns to B2C → Token issued → App receives user" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="610" width="800" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

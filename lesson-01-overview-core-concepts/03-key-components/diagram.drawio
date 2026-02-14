@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram name="Azure AD B2C Key Components" id="b2c-key-components">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="🔑 Azure AD B2C - Key Components" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="15" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Main Tenant Container -->
+        <mxCell id="tenant-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="900" height="500" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tenant-label" value="🏢 Azure AD B2C Tenant (contoso.onmicrosoft.com)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 1: Core Storage Components -->
+        <!-- User Directory -->
+        <mxCell id="user-dir-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0078D4;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="120" width="250" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user-dir-header" value="👤 User Directory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="120" width="250" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user-local" value="📧 Local Accounts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#50E6FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user-social" value="🔗 Social Links" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#50E6FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user-attrs" value="📋 User Attributes (Built-in + Custom)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="205" width="230" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="user-scale" value="📈 Scale: Millions of Users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="230" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- App Registrations -->
+        <mxCell id="app-reg-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1E8900;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="120" width="250" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-reg-header" value="🖥️ App Registrations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="120" width="250" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-client" value="🔑 Client ID" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1E8900;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="485" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-secret" value="🔒 Client Secret" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1E8900;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="605" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-redirect" value="🔗 Redirect URIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="485" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-scopes" value="📋 API Permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="605" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="app-types" value="Web | SPA | Mobile | API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="485" y="240" width="230" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Identity Providers -->
+        <mxCell id="idp-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="120" width="250" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-header" value="🔑 Identity Providers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="120" width="250" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-google" value="Google" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="790" y="165" width="55" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-fb" value="Facebook" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="855" y="165" width="55" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-apple" value="Apple" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="920" y="165" width="55" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-ms" value="Microsoft" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="985" y="165" width="55" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-saml" value="🏢 Enterprise SAML/OIDC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="200" width="250" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="idp-custom" value="Custom OIDC Provider" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="790" y="235" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Row 2: Policy Layer -->
+        <mxCell id="policy-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B2D8E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="290" width="555" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="policy-header" value="🔄 Policies (Authentication Experiences)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="290" width="555" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- User Flows -->
+        <mxCell id="userflows-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B2D8E;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="335" width="260" height="65" as="geometry" />
+        </mxCell>
+
+        <mxCell id="userflows-label" value="🔄 User Flows (Recommended)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#7B2D8E;" vertex="1" parent="1">
+          <mxGeometry x="185" y="337" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uf-signup" value="Sign-up" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="185" y="360" width="55" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uf-signin" value="Sign-in" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="245" y="360" width="55" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uf-profile" value="Profile Edit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="305" y="360" width="60" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uf-reset" value="Pwd Reset" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="370" y="360" width="60" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Custom Policies -->
+        <mxCell id="custompol-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=#7B2D8E;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="335" width="260" height="65" as="geometry" />
+        </mxCell>
+
+        <mxCell id="custompol-label" value="📜 Custom Policies (IEF)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="460" y="337" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cp-xml" value="XML-based | Full Control | Complex Logic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cp-api" value="API Connectors | Custom Claims | Multi-step" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="460" y="378" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Security Features -->
+        <mxCell id="security-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="290" width="250" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="security-header" value="🛡️ Security Features" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DD3522;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="290" width="250" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-mfa" value="🔐 MFA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="335" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-ca" value="🛡️ Cond. Access" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="870" y="335" width="80" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-idp" value="🔍 ID Protect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="960" y="335" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sec-lockout" value="Account Lockout | Password Policies" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="790" y="375" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Row 3: Output -->
+        <!-- Token Configuration -->
+        <mxCell id="token-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#50E6FF;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="430" width="400" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="token-header" value="🎫 Token Configuration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#50E6FF;strokeColor=none;fontColor=#232F3E;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="430" width="400" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="token-id" value="🆔 ID Token&#xa;(User Identity)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="475" width="115" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="token-access" value="🔓 Access Token&#xa;(API Auth)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="305" y="475" width="115" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="token-refresh" value="♻️ Refresh Token&#xa;(Renewal)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="475" width="115" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="token-jwt" value="Format: JWT | Claims Customization | Token Lifetime" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="180" y="525" width="380" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- UI Customization -->
+        <mxCell id="ui-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="430" width="400" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui-header" value="🎨 UI Customization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="430" width="400" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui-branding" value="🏢 Company&#xa;Branding" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="640" y="475" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui-html" value="📝 Custom&#xa;HTML/CSS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="740" y="475" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui-layout" value="📐 Page&#xa;Layouts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="840" y="475" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui-lang" value="🌍 Multi-&#xa;language" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="940" y="475" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui-note" value="Host your own pages or use built-in templates" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="640" y="525" width="380" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend" value="Legend: 🔵 Core | 🟢 Apps | 🟠 IdP | 🟣 Policies | 🔴 Security | 🔷 Tokens | 🟠 UI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#232F3E;fontColor=#232F3E;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="300" y="590" width="600" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

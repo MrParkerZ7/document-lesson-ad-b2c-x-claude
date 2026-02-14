@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2024-02-14T00:00:00.000Z" agent="Claude" version="1.0">
+  <diagram name="Page Layouts" id="page-layouts">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="📄 Page Layout Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+        <!-- Page Contract -->
+        <mxCell id="contract" value="🔢 Page Contract (DataUri)&#xa;Defines B2C features and element versions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="400" height="60" as="geometry" />
+        </mxCell>
+        <!-- Page Template -->
+        <mxCell id="template" value="📝 Page Template&#xa;HTML structure and styling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="400" height="60" as="geometry" />
+        </mxCell>
+        <!-- Rendered Page -->
+        <mxCell id="rendered" value="🖥️ Rendered Page&#xa;B2C injects dynamic content into template" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="400" height="60" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1" source="contract" target="template">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1" source="template" target="rendered">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Page Types -->
+        <mxCell id="types-title" value="📊 Page Types" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="type1" value="🔐 Unified&#xa;Sign-in" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="type2" value="📝 Sign-up" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="type3" value="👤 Self-&#xa;Asserted" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="type4" value="📱 MFA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="type5" value="❌ Error" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DD3522;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="type6" value="🔑 IdP&#xa;Selection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="430" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

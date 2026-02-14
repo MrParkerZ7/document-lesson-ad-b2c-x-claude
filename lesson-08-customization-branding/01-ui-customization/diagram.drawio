@@ -1,0 +1,53 @@
+<mxfile host="app.diagrams.net" modified="2024-02-14T00:00:00.000Z" agent="Claude" version="1.0">
+  <diagram name="UI Customization" id="ui-customization">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="🎨 UI Customization Options" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+        <!-- Customization Levels -->
+        <mxCell id="level1" value="🎨 Basic Branding&#xa;&#xa;• Logo&#xa;• Background&#xa;• Colors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="level2" value="📄 Page Templates&#xa;&#xa;• Ocean Blue&#xa;• Slate Gray&#xa;• Classic" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="level3" value="🖥️ Custom HTML&#xa;&#xa;• Full control&#xa;• Your hosting&#xa;• JavaScript OK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="180" height="120" as="geometry" />
+        </mxCell>
+        <!-- Flexibility Arrow -->
+        <mxCell id="flex-arrow" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#232F3E;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="260" as="sourcePoint" />
+            <mxPoint x="760" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flex-label1" value="Low Flexibility" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="270" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flex-label2" value="High Flexibility" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="660" y="270" width="100" height="20" as="geometry" />
+        </mxCell>
+        <!-- Custom HTML Requirements -->
+        <mxCell id="html-container" value="📝 Custom HTML Requirements" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="600" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="req1" value="🔒 HTTPS&#xa;Required" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="370" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="req2" value="🌐 CORS&#xa;Enabled" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="370" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="req3" value="📦 &lt;div id=&quot;api&quot;&gt;&#xa;Required" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="370" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="req4" value="🌍 Public&#xa;Access" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="370" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

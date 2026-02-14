@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram name="Configuring User Flows" id="configuring-user-flows">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="⚙️ Configuring User Flows - Step by Step" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="15" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Step 1: Create Flow -->
+        <mxCell id="step1-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="200" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-header" value="1️⃣ Create Flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-type" value="📝 Select Type:&#xa;• Sign up and sign in&#xa;• Sign in&#xa;• Password reset&#xa;• Profile editing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="105" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step1-name" value="📛 Name: B2C_1_PolicyName" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="50" y="195" width="180" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 1-2 -->
+        <mxCell id="arrow1-2" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="155" as="sourcePoint" />
+            <mxPoint x="280" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Step 2: Identity Providers -->
+        <mxCell id="step2-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="200" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-header" value="2️⃣ Identity Providers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-local" value="☑️ Local Account" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="290" y="110" width="90" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-google" value="☑️ Google" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="385" y="110" width="85" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-fb" value="☑️ Facebook" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="290" y="140" width="90" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-apple" value="☑️ Apple" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF8C00;fontColor=#232F3E;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="385" y="140" width="85" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-enterprise" value="☐ Enterprise SAML/OIDC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="290" y="175" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step2-note" value="⚠️ Configure IdPs first" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#FF8C00;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="205" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 2-3 -->
+        <mxCell id="arrow2-3" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="155" as="sourcePoint" />
+            <mxPoint x="520" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Step 3: User Attributes -->
+        <mxCell id="step3-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1E8900;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="200" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-header" value="3️⃣ User Attributes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-table-header" value="Attribute    Collect  Return" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontStyle=1;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="530" y="105" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-email" value="Email              ✓           ✓" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="530" y="120" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-name" value="Display Name   ✓           ✓" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="530" y="135" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-given" value="Given Name     ✓           ✓" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="530" y="150" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-custom" value="Custom Attr     ✓           ✓" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;spacingLeft=5;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="530" y="165" width="180" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step3-legend" value="Collect = Sign-up form&#xa;Return = Token claims" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="530" y="190" width="180" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 3-4 -->
+        <mxCell id="arrow3-4" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="155" as="sourcePoint" />
+            <mxPoint x="760" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Step 4: Token Claims -->
+        <mxCell id="step4-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#50E6FF;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="70" width="200" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-header" value="4️⃣ Token Claims" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#50E6FF;strokeColor=none;fontColor=#232F3E;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-claims" value="🎫 Application Claims:&#xa;☑️ sub (subject)&#xa;☑️ email&#xa;☑️ name&#xa;☑️ given_name&#xa;☑️ idp (identity provider)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="770" y="105" width="180" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step4-lifetime" value="⏱️ Token Lifetime: 60 min" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="770" y="200" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 4-5 -->
+        <mxCell id="arrow4-5" value="" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="970" y="155" as="sourcePoint" />
+            <mxPoint x="1000" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Step 5: Page Layout -->
+        <mxCell id="step5-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B2D8E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="70" width="170" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-header" value="5️⃣ Page Layout" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="70" width="170" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-templates" value="🎨 Templates:&#xa;○ Ocean Blue&#xa;● Slate Gray&#xa;○ Classic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="105" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="step5-custom" value="🖼️ Custom Branding:&#xa;Logo, Background,&#xa;Colors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7B2D8E;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="170" width="150" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Additional Configuration Row -->
+        <!-- MFA Configuration -->
+        <mxCell id="mfa-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#DD3522;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="350" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mfa-header" value="🛡️ MFA Configuration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DD3522;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="350" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mfa-options" value="Enforcement:&#xa;○ Off - No MFA&#xa;○ Always On - Every sign-in&#xa;● Conditional - Risk-based (P2)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="305" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mfa-methods" value="Methods:&#xa;☑️ Email OTP&#xa;☑️ SMS/Phone&#xa;☑️ Authenticator App" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="305" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mfa-note" value="⚠️ Conditional Access requires Azure AD B2C Premium P2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="50" y="385" width="330" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- API Connectors -->
+        <mxCell id="api-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1E8900;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="270" width="380" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api-header" value="🔗 API Connectors (Extensibility)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="270" width="380" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- API Flow Diagram -->
+        <mxCell id="api-flow-start" value="Sign-up&#xa;Start" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1E8900;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="435" y="315" width="60" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api-arrow1" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E8900;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="335" as="sourcePoint" />
+            <mxPoint x="520" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="api-call1" value="🔗 API Call 1&#xa;Validation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="520" y="315" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api-arrow2" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E8900;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="605" y="335" as="sourcePoint" />
+            <mxPoint x="625" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="api-create" value="Create&#xa;User" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1E8900;fontColor=#232F3E;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="625" y="315" width="60" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api-arrow3" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E8900;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="335" as="sourcePoint" />
+            <mxPoint x="710" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="api-call2" value="🔗 API Call 2&#xa;Enrichment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="710" y="315" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api-config" value="Config: Endpoint URL | Auth (Basic/Cert) | Headers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="435" y="370" width="355" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api-note" value="💡 Validate, block, or enrich user data with external APIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#1E8900;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="435" y="395" width="355" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Test Flow -->
+        <mxCell id="test-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="270" width="340" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="test-header" value="🧪 Testing User Flows" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="270" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="test-btn" value="▶️ Run user flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#50E6FF;strokeColor=#0078D4;fontColor=#232F3E;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="315" width="130" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="test-steps" value="1. Select application&#xa;2. Choose reply URL&#xa;3. Run flow&#xa;4. Test in browser&#xa;5. Inspect token" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="310" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="test-result" value="✅ Always test before production deployment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="850" y="385" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Checklist Summary -->
+        <mxCell id="checklist" value="✅ Configuration Checklist: Flow Type → Identity Providers → Attributes → Token Claims → Page Layout → MFA → API Connectors → Test" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="450" width="1000" height="35" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram name="Enterprise Identity Providers" id="enterprise-identity-providers">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="🏢 Enterprise Identity Provider Federation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#7B2D8E;" vertex="1" parent="1">
+          <mxGeometry x="350" y="15" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Your SaaS Application -->
+        <mxCell id="app-box" value="🖥️ Your SaaS Application" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="70" width="250" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow App to B2C -->
+        <mxCell id="arrow-app-b2c" value="" style="endArrow=classic;startArrow=classic;html=1;strokeWidth=3;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="130" as="sourcePoint" />
+            <mxPoint x="600" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Azure AD B2C -->
+        <mxCell id="b2c-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="170" width="500" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b2c-label" value="🏢 Azure AD B2C (Federation Hub)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="450" y="195" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="b2c-role" value="Acts as Service Provider (SP)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="225" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows to Enterprise IdPs -->
+        <mxCell id="arrow-b2c-idp1" value="OIDC" style="endArrow=classic;startArrow=classic;html=1;strokeWidth=2;strokeColor=#0078D4;flowAnimation=1;shadow=1;fontColor=#0078D4;fontSize=10;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="280" as="sourcePoint" />
+            <mxPoint x="220" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="arrow-b2c-idp2" value="SAML" style="endArrow=classic;startArrow=classic;html=1;strokeWidth=2;strokeColor=#7B2D8E;flowAnimation=1;shadow=1;fontColor=#7B2D8E;fontSize=10;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="280" as="sourcePoint" />
+            <mxPoint x="600" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="arrow-b2c-idp3" value="SAML" style="endArrow=classic;startArrow=classic;html=1;strokeWidth=2;strokeColor=#7B2D8E;flowAnimation=1;shadow=1;fontColor=#7B2D8E;fontSize=10;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="280" as="sourcePoint" />
+            <mxPoint x="980" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Customer A - Azure AD (OIDC) -->
+        <mxCell id="cust-a-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="300" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-a-header" value="🏢 Customer A - Azure AD (OIDC)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-a-config" value="Protocol: OpenID Connect&#xa;Metadata URL: /.well-known/openid-configuration&#xa;Client ID: app-registration-id&#xa;Client Secret: ******************" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="280" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-a-users" value="👤👤👤 Corporate Users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="470" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Customer B - Okta (SAML) -->
+        <mxCell id="cust-b-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B2D8E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="360" width="300" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-b-header" value="🏢 Customer B - Okta (SAML 2.0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="360" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-b-config" value="Protocol: SAML 2.0&#xa;Metadata URL: /app/saml/metadata&#xa;Entity ID: https://okta.example.com&#xa;Signing Certificate: X.509 cert" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="400" width="280" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-b-users" value="👤👤👤 Corporate Users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="490" y="470" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Customer C - ADFS (SAML) -->
+        <mxCell id="cust-c-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B2D8E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="360" width="300" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-c-header" value="🏢 Customer C - ADFS (SAML 2.0)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="360" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-c-config" value="Protocol: SAML 2.0&#xa;Metadata URL: /FederationMetadata/...&#xa;Entity ID: https://adfs.company.com&#xa;Signing Certificate: X.509 cert" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="870" y="400" width="280" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cust-c-users" value="👤👤👤 Corporate Users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="900" y="470" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Protocol Comparison -->
+        <mxCell id="compare-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#232F3E;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="560" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="compare-header" value="📊 OIDC vs SAML 2.0 Comparison" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- OIDC Column -->
+        <mxCell id="oidc-col" value="🔷 OpenID Connect" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="570" width="250" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="oidc-features" value="✓ JSON-based (JWT tokens)&#xa;✓ Simpler configuration&#xa;✓ Modern protocol&#xa;✓ Mobile-friendly&#xa;✓ Discovery endpoint" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="600" width="250" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- SAML Column -->
+        <mxCell id="saml-col" value="🟣 SAML 2.0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="570" width="260" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="saml-features" value="✓ XML-based (SAML Assertions)&#xa;✓ Enterprise standard&#xa;✓ Mature &amp; widespread&#xa;✓ Strong security model&#xa;✓ Certificate-based" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="600" width="260" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- Configuration Requirements -->
+        <mxCell id="config-container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#DD3522;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="530" width="540" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="config-header" value="⚙️ Configuration Requirements" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DD3522;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="530" width="540" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- OIDC Requirements -->
+        <mxCell id="oidc-req" value="OIDC Requirements:&#xa;• Metadata URL&#xa;• Client ID&#xa;• Client Secret&#xa;• Scopes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="635" y="570" width="160" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- SAML Requirements -->
+        <mxCell id="saml-req" value="SAML Requirements:&#xa;• IdP Metadata URL&#xa;• Entity ID&#xa;• SSO URL&#xa;• Signing Certificate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="810" y="570" width="160" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- B2C Provides -->
+        <mxCell id="b2c-provides" value="B2C Provides:&#xa;• SP Entity ID&#xa;• Redirect URI&#xa;• SP Metadata" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DD3522;fontColor=#232F3E;shadow=1;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="985" y="570" width="160" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- Success Message -->
+        <mxCell id="success" value="✅ Enterprise users sign in with corporate credentials → B2C issues application token → Single sign-on experience" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="700" width="800" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

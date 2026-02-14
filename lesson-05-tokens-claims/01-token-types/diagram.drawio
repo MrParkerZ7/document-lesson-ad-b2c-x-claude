@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2024-02-14T00:00:00.000Z" agent="Claude" version="1.0">
+  <diagram name="Token Types" id="token-types">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="🎫 Azure AD B2C Token Types" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+        <!-- ID Token -->
+        <mxCell id="id-token" value="🆔 ID Token&#xa;&#xa;• User identity&#xa;• Authentication proof&#xa;• User claims" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="100" width="200" height="120" as="geometry" />
+        </mxCell>
+        <!-- Access Token -->
+        <mxCell id="access-token" value="🔐 Access Token&#xa;&#xa;• API authorization&#xa;• Scopes/permissions&#xa;• Resource access" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="200" height="120" as="geometry" />
+        </mxCell>
+        <!-- Refresh Token -->
+        <mxCell id="refresh-token" value="🔄 Refresh Token&#xa;&#xa;• Get new tokens&#xa;• Silent renewal&#xa;• Long-lived" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="850" y="100" width="200" height="120" as="geometry" />
+        </mxCell>
+        <!-- JWT Structure -->
+        <mxCell id="jwt-container" value="🔍 JWT Token Structure" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=2;shadow=1;verticalAlign=top;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="800" height="180" as="geometry" />
+        </mxCell>
+        <!-- Header -->
+        <mxCell id="header" value="HEADER&#xa;{&quot;alg&quot;:&quot;RS256&quot;,&#xa;&quot;typ&quot;:&quot;JWT&quot;}" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <!-- Payload -->
+        <mxCell id="payload" value="PAYLOAD&#xa;{&quot;sub&quot;:&quot;user-id&quot;,&#xa;&quot;name&quot;:&quot;John&quot;,&#xa;&quot;exp&quot;:123456}" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <!-- Signature -->
+        <mxCell id="signature" value="SIGNATURE&#xa;RS256(header.payload,&#xa;privateKey)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <!-- Dots -->
+        <mxCell id="dot1" value="." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dot2" value="." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="340" width="40" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

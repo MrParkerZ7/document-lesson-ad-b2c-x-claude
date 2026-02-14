@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" modified="2024-02-14T00:00:00.000Z" agent="Claude" version="1.0">
+  <diagram name="Production Guidelines" id="production-guidelines">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="✅ Production Readiness Checklist" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#0078D4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        <!-- Security -->
+        <mxCell id="security" value="🔒 Security&#xa;&#xa;☑️ MFA enabled&#xa;☑️ HTTPS only&#xa;☑️ Key Vault secrets&#xa;☑️ Token validation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DD3522;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="180" height="140" as="geometry" />
+        </mxCell>
+        <!-- Monitoring -->
+        <mxCell id="monitoring" value="📈 Monitoring&#xa;&#xa;☑️ Diagnostic settings&#xa;☑️ Alerts configured&#xa;☑️ Log Analytics&#xa;☑️ App Insights" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0078D4;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="180" height="140" as="geometry" />
+        </mxCell>
+        <!-- Reliability -->
+        <mxCell id="reliability" value="🔄 Reliability&#xa;&#xa;☑️ DR plan&#xa;☑️ Backups&#xa;☑️ Rollback ready&#xa;☑️ Testing complete" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="180" height="140" as="geometry" />
+        </mxCell>
+        <!-- Documentation -->
+        <mxCell id="documentation" value="📚 Documentation&#xa;&#xa;☑️ Runbooks&#xa;☑️ Contact list&#xa;☑️ Architecture&#xa;☑️ Policies inventory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7B2D8E;strokeColor=none;fontColor=#FFFFFF;shadow=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="820" y="100" width="180" height="140" as="geometry" />
+        </mxCell>
+        <!-- Environment Strategy -->
+        <mxCell id="env-title" value="🏗️ Environment Strategy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dev" value="🔧 Development" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="staging" value="🧪 Staging" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="prod" value="🚀 Production" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8900;strokeColor=none;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="340" width="150" height="50" as="geometry" />
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="arrow1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1" source="dev" target="staging">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#0078D4;flowAnimation=1;shadow=1;" edge="1" parent="1" source="staging" target="prod">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Best Practices -->
+        <mxCell id="practices" value="✅ Best Practices: Separate tenants or policy prefixes per environment" style="text;html=1;strokeColor=none;fillColor=#E6F2FF;strokeColor=#0078D4;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="420" width="450" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
